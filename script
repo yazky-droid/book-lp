@@ -1,0 +1,14 @@
+window.addEventListener("scroll", () => {
+
+  const scrollY = window.scrollY
+
+  const cloud1 = document.querySelector(".cloud-1")
+  const cloud2 = document.querySelector(".cloud-2")
+
+  cloud1.style.transform =
+    `translateY(${scrollY * 0.2}px)`
+
+  cloud2.style.transform =
+    `translateY(${scrollY * 0.35}px)`
+
+})
